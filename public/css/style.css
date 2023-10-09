@@ -1,0 +1,206 @@
+body {
+    font-family: "Lato", sans-serif;
+    background: #efefef;
+    margin: 0 !important;
+    padding: 0;
+    direction: rtl;
+  }
+  /* start sidebar */
+  .sidebar {
+   height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .fa-arrow-circle-right{
+    color: rgb(255, 0, 149);
+  }
+  .sidebar a {
+    padding: 15px 15px 20px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+/*   
+  .sidebar a:hover {
+    color: #777676;
+  }
+   */
+   /*close and open sidebar */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 150px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(177, 175, 175);
+    background:none;
+    padding: 5px 15px;
+    border: none;
+    outline:none
+  }
+  
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #666565;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    outline: none;
+    transition: 2s;
+    margin-top: 30px;
+  }
+  
+  /* On mouse-over */
+  .sidebar a:hover, .dropdown-btn:hover {
+    color: #535252;
+    background: #efefef;
+  }
+  .sidebar .closebtn:hover{
+    background: none;
+  }
+
+  .sidebar a:active{
+    color: #2c2b2b;
+    background: #efefef;
+    cursor: pointer;
+  }
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: #efefef;
+    color: #666565;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #fff;
+  }
+  .dropdown-container a{
+    font-size: 16px;
+    color: rgb(71, 70, 70);
+    padding-right: 50px;
+  }
+.sidebar .dropdown-btn{
+  padding-bottom: 20px;
+  padding-right: 25px;
+}
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: left;
+    padding-left: 8px;
+  }
+  .sidebar .closebtn:hover{
+    color:#404040;
+  }
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }    
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .containerr {
+      min-height: 100vh;
+  } 
+
+  /* start main */
+  .main {
+    transition: .5s;
+    padding: 20px;
+    background: #057aa1;
+  }
+  .main li{
+    display: inline-block;
+    font-size: 21px;
+  }
+  .main li a{
+    text-decoration: none;
+    color: #efefef;
+  }
+  .main button span{
+    font-size: 25px;
+  }
+  @media(max-width:880px){
+    .main {
+      height:80px ;
+    }
+
+  }
+  
+  #main {       position: relative; min-height: 100vh;}
+  #main .thumbnail{margin-top: 60px; text-align: center;}
+  header .fa {
+    font-size: 22px;
+      color: #f1eded;
+  }
+
+  
+
+  
+  footer {
+      text-align:center;      
+      width: 100%;
+      background-color: #151414;
+      color: #eee;
+      padding: 20px 0;
+      heigt: calc(100hv-200px);
+  }
+
+
+  .prev-img {
+      width: 200px;
+  } 
+
+
+  .fac-select-wrapper {
+      width: 40%;
+      margin: 7px;
+      float: right;
+
+  }
+
+  .navbar{
+      background-color: #880e4f !important;
+  }
+
+  nav img {
+      
+      max-width: 50px;
+  }
+
+
+  .card {
+
+      margin: 30px auto;
+  }
+
+  thead {
+      background-color: #fce4ec;
+  }
